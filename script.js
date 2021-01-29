@@ -68,6 +68,9 @@ function calculateTotal() {
     const firstClassCount = getInput('firstClass');
     const economyCount = getInput('economy');
 
+    document.getElementById('firstClass-confirmed').innerText = firstClassCount;
+    document.getElementById('economy-confirmed').innerText = economyCount;
+
     const subtotalPrice = firstClassCount * 150 + economyCount * 100;
     document.getElementById('subtotal-price').innerText = subtotalPrice;
 
@@ -76,9 +79,15 @@ function calculateTotal() {
 
     const totalPrice = subtotalPrice + taxAmount;
     document.getElementById('total-price').innerText = totalPrice;
+
+    document.getElementById('totalPrice-confirmed').innerText ='$'+totalPrice;
 }
 function getInput(ticket) {
     const ticketInput = document.getElementById(ticket + '-count');
     const ticketCount = parseInt(ticketInput.value);
     return ticketCount;
 }
+document.getElementById('book-now').addEventListener('click',function(){
+    document.getElementById('booking-section').style.display = 'none';
+    document.getElementById('confirmation-area').style.display = 'block';
+})

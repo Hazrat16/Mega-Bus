@@ -9,7 +9,7 @@ body{
     font-family: 'Roboto', sans-serif;
     background:url("images/bus.png");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center ;
     background-attachment: scroll;
     background-size: cover;
 }
@@ -44,6 +44,20 @@ nav ul li a:hover, a.active{
     gap: 70px;
     align-items: center;
 }
+#confirmation-area{
+    display: none;
+    background:url("images/confirmation.jpg");
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-attachment: scroll;
+    background-size: cover;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    float: right;
+    width: 100%;
+    margin: 50px 0px 0px 80px;
+}
 .booking-content{
     color: #fff;
     width: 100%;
@@ -63,7 +77,7 @@ nav ul li a:hover, a.active{
     border-radius: 5px;
     float: right;
     width: 80%;
-    margin: 50px 0px 0px 80px;
+    margin: 30px 0px 0px 80px;
 }
 .booking-form h3{
     margin: 10px 0px;
