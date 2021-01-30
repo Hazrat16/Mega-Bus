@@ -66,6 +66,9 @@
             </div>
             <div class="inputs">
                 <div class="input-group f-class">
+                    <div class="plus-minus-btn">
+                        <button class="btn btn-dark" onclick="handleTicketChange('firstClass',false);">-</button>
+                    </div>
                     <div>
                         <label for="">First Class ($150)</label>
                         <input id="firstClass-count" class="inp-style inp-width" type="number" name="" value="0" min="0" max="100" disabled>
@@ -73,10 +76,13 @@
                     <div class="plus-minus-btn">
                         <!-- <button id="increase-ticket" class="btn btn-default"><i class="fas fa-plus"></i></button>
                         <button id="increase-ticket" class="btn btn-default"><i class="fas fa-minus"></i></button> -->
-                        <p> <button class="btn btn-dark" onclick="handleTicketChange('firstClass',false);">-</button>   <button class="btn btn-dark" onclick="handleTicketChange('firstClass',true);">+</button></p>
+                        <button class="btn btn-dark" onclick="handleTicketChange('firstClass',true);">+</button>
                     </div>
                 </div>
                 <div class="input-group f-class">
+                    <div class="plus-minus-btn">
+                        <button class="btn btn-dark" onclick="handleTicketChange('economy',false);">-</button>
+                    </div>
                     <div>
                         <label for="">Economy ($100)</label>
                         <input id="economy-count" class="inp-style inp-width" type="number" name="" value="0" min="0" max="100" disabled>
@@ -84,7 +90,7 @@
                     <div class="plus-minus-btn">
                         <!-- <button id="increase-ticket2nd" class="btn btn-default"><i class="fas fa-plus" ></i></button>
                         <button id="increase-ticket2nd" class="btn btn-default"><i class="fas fa-minus" ></i></button> -->
-                        <p><button class="btn btn-dark" onclick="handleTicketChange('economy',false);">-</button>   <button class="btn btn-dark" onclick="handleTicketChange('economy',true);">+</button></p>
+                        <button class="btn btn-dark" onclick="handleTicketChange('economy',true);">+</button>
                     </div>
                 </div>
 
