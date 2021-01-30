@@ -46,16 +46,18 @@ nav ul li a:hover, a.active{
 }
 #confirmation-area{
     display: none;
-    background:url("images/confirmation.jpg");
+    background:url("images/confirm.png");
     background-repeat: no-repeat;
     background-position: center ;
     background-attachment: scroll;
     background-size: cover;
+    color: white;
+    opacity: 0.8;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
     float: right;
-    width: 100%;
+    width: 80%;
     margin: 50px 0px 0px 80px;
 }
 .booking-content{
@@ -72,6 +74,7 @@ nav ul li a:hover, a.active{
 }
 .booking-form{
     background-color: #fff;
+    opacity: 0.8;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
